@@ -1,0 +1,17 @@
+# Enable error log
+[mysqld_safe]
+log_error = /var/log/mysql/mysqld_safe_error.log
+
+
+[mysql]
+# Enable error log
+log_error = /var/log/mysql/mysql_error.log
+
+# Enable general query log
+general_log_file = /var/log/mysql/mysql.log
+general_log      = 1
+
+# Enable Slow Query Log
+slow-query-log = /var/log/mysql/mysql-slow.log
+long_query_time  = 2
+#log-queries-not-using-indexes
